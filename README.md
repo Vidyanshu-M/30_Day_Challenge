@@ -26,3 +26,26 @@ Compile and run the Java file from the terminal:
 ```bash
 javac Solution.java
 java Solution
+
+
+## Day 7: Arrays
+
+### Problem Description
+Given an array of `N` integers, print the array's elements in reverse order as a single line of space-separated numbers. The input is provided as a single string of space-separated values.
+
+### Concepts Explored
+*   **Reverse Iteration:** Traversing a data structure backward by initializing the loop counter at `size - 1` and decrementing down to `0`.
+*   **Java Stream API:** Utilizing modern Java features to process data pipelines.
+    *   `Stream.of()` to initiate the data stream.
+    *   `.replaceAll("\\s+$", "")` to sanitize input by removing trailing spaces.
+    *   `.map(Integer::parseInt)` to transform string tokens into mathematical integers.
+    *   `.collect(toList())` to package the processed data into a dynamic Collection.
+*   **Collections vs. Primitive Arrays:** Working with `List<Integer>` and utilizing dynamic methods like `.size()` and `.get()` instead of standard primitive array brackets `[]`.
+
+### File Structure
+*   `Solution.java`: Contains the Java code utilizing the Stream API and `List` traversal for the HackerRank submission.
+
+### How to Run
+Compile and run the Java file from the terminal:
+```bash
+javac Solution.java
