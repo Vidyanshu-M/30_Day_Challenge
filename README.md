@@ -65,3 +65,32 @@ Learn and implement Key-Value pair mappings using the Map/Dictionary data struct
 - **Issue:** Encountered a `java.lang.NumberFormatException` during local testing.
 - **Cause:** Attempted to input a 10-digit phone number (e.g., 9918922085). This value is larger than `2,147,483,647`, which is the maximum value a 32-bit signed Java `int` can hold.
 - **Solution:** Refactored the application to use the `long` primitive data type. By updating the map to `Map<String, Long>` and parsing inputs with `Long.parseLong()`, the program can now safely store numbers up to 19 digits long without crashing.
+
+
+
+Day 9
+
+# Day 9: Recursion - Factorial
+
+## Objective
+Today's challenge focuses on understanding and implementing an algorithmic concept called Recursion. The task is to complete a factorial function that calculates the factorial of a given integer `n` using recursive calls.
+
+## Concepts Mastered Today
+- **Recursion**: A method where the solution to a problem depends on solutions to smaller instances of the same problem.
+- **Base Case**: The condition that stops the recursion (`n <= 1`), preventing infinite loops and StackOverflow errors.
+- **Recursive Case**: The part of the function that reduces the problem's size (`n * factorial(n - 1)`).
+- **The Call Stack**: Visualized how function calls are pushed to the stack (winding) and how they return values (unwinding) once the base case is hit.
+
+
+
+Day 10 
+
+# Day 10: Binary Numbers
+
+## Objective
+Today, we are learning about the algorithmic concept of Radix (Base) and converting numbers from the Decimal number system (Base-10) to the Binary number system (Base-2). The specific challenge is to find the maximum number of consecutive `1`s in a given number's binary representation.
+
+## Concepts Mastered Today
+- **Base-10 vs Base-2**: Understanding how positional number systems work.
+- **Decimal to Binary Conversion**: Utilizing the divide-by-2 method to extract remainders and form a binary number.
+- **On-the-fly Logic**: Calculating consecutive `1`s dynamically within the `while` loop without needing to store the entire binary string in memory.
