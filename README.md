@@ -94,3 +94,16 @@ Today, we are learning about the algorithmic concept of Radix (Base) and convert
 - **Base-10 vs Base-2**: Understanding how positional number systems work.
 - **Decimal to Binary Conversion**: Utilizing the divide-by-2 method to extract remainders and form a binary number.
 - **On-the-fly Logic**: Calculating consecutive `1`s dynamically within the `while` loop without needing to store the entire binary string in memory.
+
+
+## Day 11: 2D Arrays (Hourglass Sum) ⏳
+
+###  Objective
+Learned how to navigate and manipulate 2D Arrays (matrices) by solving the "Hourglass Sum" problem on HackerRank.
+
+###  Key Learnings
+- **2D Array Traversal:** Mastered using nested loops to iterate through rows (`i`) and columns (`j`).
+- **Pattern Extraction (The "Damroo" Shape):** Extracted a 7-element "Hourglass" shape from a 6x6 grid and calculated the maximum possible sum by sliding a 3x3 frame across the board.
+- **Boundary Conditions:** Learned the importance of setting correct loop limits (`row <= 3` and `col <= 3`) to prevent `ArrayIndexOutOfBoundsException` when the frame reaches the edges of the grid.
+- **Lists vs Arrays:** Understood how to traverse nested dynamic lists (`List<List<Integer>>`) using `.get(i).get(j)` instead of standard primitive arrays (`int[][]`).
+- **Input Error Handling:** Fixed `NumberFormatException` caused by blank terminal inputs by implementing `.filter(str -> !str.isEmpty())` in Java Streams.
