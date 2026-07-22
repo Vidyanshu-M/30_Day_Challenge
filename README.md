@@ -121,3 +121,15 @@ Learned and applied Object-Oriented Programming (OOP) concepts, specifically Inh
 - **Constructors & `super()`:** Learned how to initialize a child class object while passing required parameters back up to the parent class's constructor using the `super()` keyword.
 - **Array Processing & Logic:** Implemented a `calculate()` method to iterate through an integer array (`testScores`), compute the average, and return a specific character grade based on conditional logic.
 - **Input Methods Observation:** Understood why HackerRank's locked stub codes sometimes require `throws IOException` (when using `BufferedReader`) and sometimes don't (when using `Scanner`, which handles internal exceptions gracefully).
+
+DAY 13 
+
+## Day 13: Abstract Classes 📖
+
+### 📝 Objective
+Extended the concept of Inheritance by working with Abstract Classes to understand how to enforce method implementation in child classes.
+
+### 💡 Key Learnings
+- **Abstract Classes:** Learned that abstract classes act as a blueprint and cannot be instantiated directly (e.g., `new Book()` throws an error). They only exist to be extended.
+- **Abstract Methods:** Understood that an abstract method is a contract. If a parent class has an abstract `display()` method, the child class is strictly forced to implement it, ensuring consistent behavior across all child classes.
+- **Data Encapsulation & `super()`:** Continued practicing passing parameters from the child constructor (`MyBook`) to the parent constructor (`Book`) using the `super()` keyword, keeping the code DRY (Don't Repeat Yourself).
