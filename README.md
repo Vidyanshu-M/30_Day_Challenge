@@ -107,3 +107,17 @@ Learned how to navigate and manipulate 2D Arrays (matrices) by solving the "Hour
 - **Boundary Conditions:** Learned the importance of setting correct loop limits (`row <= 3` and `col <= 3`) to prevent `ArrayIndexOutOfBoundsException` when the frame reaches the edges of the grid.
 - **Lists vs Arrays:** Understood how to traverse nested dynamic lists (`List<List<Integer>>`) using `.get(i).get(j)` instead of standard primitive arrays (`int[][]`).
 - **Input Error Handling:** Fixed `NumberFormatException` caused by blank terminal inputs by implementing `.filter(str -> !str.isEmpty())` in Java Streams.
+
+
+DAY 12 
+
+## Day 12: Inheritance 🧬
+
+### 📝 Objective
+Learned and applied Object-Oriented Programming (OOP) concepts, specifically Inheritance and Constructors, by creating a derived class that inherits from a base class.
+
+### 💡 Key Learnings
+- **Class Inheritance:** Used the `extends` keyword to create a `Student` class that inherits properties (`firstName`, `lastName`, `idNumber`) from a parent `Person` class.
+- **Constructors & `super()`:** Learned how to initialize a child class object while passing required parameters back up to the parent class's constructor using the `super()` keyword.
+- **Array Processing & Logic:** Implemented a `calculate()` method to iterate through an integer array (`testScores`), compute the average, and return a specific character grade based on conditional logic.
+- **Input Methods Observation:** Understood why HackerRank's locked stub codes sometimes require `throws IOException` (when using `BufferedReader`) and sometimes don't (when using `Scanner`, which handles internal exceptions gracefully).
