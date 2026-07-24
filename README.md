@@ -133,3 +133,36 @@ Extended the concept of Inheritance by working with Abstract Classes to understa
 - **Abstract Classes:** Learned that abstract classes act as a blueprint and cannot be instantiated directly (e.g., `new Book()` throws an error). They only exist to be extended.
 - **Abstract Methods:** Understood that an abstract method is a contract. If a parent class has an abstract `display()` method, the child class is strictly forced to implement it, ensuring consistent behavior across all child classes.
 - **Data Encapsulation & `super()`:** Continued practicing passing parameters from the child constructor (`MyBook`) to the parent constructor (`Book`) using the `super()` keyword, keeping the code DRY (Don't Repeat Yourself).
+
+
+
+DAY 14 
+
+# Day 14: Scope and Array Optimization 🚀
+
+## Objective
+The goal for today was to solve the **Maximum Absolute Difference** problem. The challenge required finding the maximum absolute difference between any two elements in an array of non-negative integers.
+
+## Key Concepts Learned
+1. **Variable Scope:** Understanding the difference between Class Scope (Instance Variables) and Local/Loop Scope.
+2. **The `this` Keyword:** Using `this` in constructors to resolve naming collisions (Shadowing) between class fields and method parameters.
+3. **Code Optimization:** 
+   - *Brute Force:* Using a nested loop to compare every element checks every combination but is extremely slow for large arrays.
+   - *Optimized:* Finding the minimum and maximum values in a single loop traversal $O(n)$, then calculating `max - min`.
+4. **Fast I/O:** Implementing `BufferedReader` and `InputStreamReader` for faster user input processing in Java.
+5. **Compilation Basics:** Remembering that `.java` files must be recompiled into `.class` files using `javac` before executing with `java`.
+
+## Optimized Code Snippet
+```java
+void computeDifference() {
+    int min = elements[0];
+    int max = elements[0];
+    
+    // Single pass loop instead of nested loops!
+    for (int i = 0; i < elements.length; i++) {
+        if (elements[i] < min) min = elements[i];
+        if (elements[i] > max) max = elements[i];
+    }
+    
+    maximumDifference = max - min;
+}
