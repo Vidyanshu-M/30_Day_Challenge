@@ -166,3 +166,47 @@ void computeDifference() {
     
     maximumDifference = max - min;
 }
+
+
+
+DAY 15
+
+
+# Day 15: Linked List - Insertion at the Tail 🚂
+
+## Objective
+Today's challenge was to understand the fundamentals of a Singly Linked List and write a function to insert a new Node at the tail (end) of the list.
+
+## Key Concepts Learned
+1. **The Node Structure:** 
+   - A Linked List is made of Nodes. 
+   - Each Node contains `data` (the value) and a `next` pointer (the reference to the next Node).
+2. **The `head` Pointer:** 
+   - The starting point of the list. If `head` is null, the list is empty.
+3. **Safe Traversal (The "Ticket Checker" Rule):** 
+   - Never overwrite the `head` pointer to traverse the list, as it will cause the list to be lost in memory for the Garbage Collector.
+   - Always use a temporary pointer (`Node current = head;`) to traverse to the end of the list (`while(current.next != null)`).
+4. **Insertion Logic:**
+   - **Empty List:** The new node becomes the `head`.
+   - **Populated List:** Traverse to the last node and link its `next` to the new node.
+
+## Code Snippet (Insert Method)
+```java
+public static Node insert(Node head, int data) {
+    Node newNode = new Node(data);
+    
+    // Condition 1: Empty List
+    if (head == null) {
+        return newNode;
+    } 
+    // Condition 2: Traverse and Insert at Tail
+    else {
+        Node current = head; 
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+        return head;
+    }
+}
+
