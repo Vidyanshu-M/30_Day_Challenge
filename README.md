@@ -210,3 +210,30 @@ public static Node insert(Node head, int data) {
     }
 }
 
+
+
+
+DAY 16
+
+# Day 16: Exceptions - String to Integer 
+
+##  Objective
+Today's challenge is all about understanding **Exception Handling**. The goal is to read a string and parse it into an integer. If the string cannot be converted into an integer, we must handle the exception and print a specific error message.
+
+**Constraint:** We are strictly forbidden from using any conditional statements (`if-else`) or loops. We must rely purely on `try-catch` blocks!
+
+##  Task
+1. Read a string, `S`.
+2. Print its integer value.
+3. If `S` cannot be converted to an integer (e.g., it contains letters), catch the exception and print `Bad String`.
+
+## Concepts Covered
+- **Exception Handling:** Using `try` and `catch` blocks to prevent programs from crashing.
+- **Parsing:** Converting String data types to Integer using `Integer.parseInt()`.
+- **Handling NumberFormatException:** The specific error thrown when a string with non-numeric characters is parsed into an int.
+
+##  Examples
+
+**Sample Input 1:**
+```text
+3
