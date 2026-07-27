@@ -237,3 +237,27 @@ Today's challenge is all about understanding **Exception Handling**. The goal is
 **Sample Input 1:**
 ```text
 3
+
+DAY 18
+
+# Day 17: More Exceptions - Propagating 🛡️
+
+## 🎯 Objective
+Today's challenge dives deeper into Exception Handling. Instead of just catching exceptions thrown by Java's built-in methods, we practice **throwing** our own exceptions and **propagating** them back to the calling method.
+
+## 📝 Task
+Write a `Calculator` class with a single method: `int power(int n, int p)`. 
+- The method takes two integers and returns the result of $n^p$.
+- **Constraint:** If either `n` or `p` is negative, the method must throw an exception with the exact message: `n and p should be non-negative`.
+
+## 🧠 Concepts Covered
+- **Exception Propagation:** Passing the responsibility of handling an error to the calling method (the "Boss-Worker" model).
+- **`throws` Keyword:** Used in the method signature to warn that this method might throw an exception.
+- **`throw` Keyword:** Used inside the method to actually create and throw a new Exception object.
+- **Math.pow():** Utilizing Java's built-in Math library and casting the double result back to an integer.
+
+## 💡 Examples
+
+**Sample Input 1:**
+```text
+3 5
