@@ -261,3 +261,30 @@ Write a `Calculator` class with a single method: `int power(int n, int p)`.
 **Sample Input 1:**
 ```text
 3 5
+
+
+
+DAY 18
+
+# Day 18: Queues and Stacks 
+
+##  Objective
+Today's challenge introduces two fundamental Data Structures: Stacks and Queues. We are tasked with building a system that can verify if a given word is a palindrome by leveraging the core principles of both structures simultaneously.
+
+## 🧠 Concepts Covered
+- **Stack:** Follows the **LIFO** (Last-In-First-Out) principle. Uses `.push()` to add and `.pop()` to remove.
+- **Queue:** Follows the **FIFO** (First-In-First-Out) principle. Implemented via a `LinkedList`. Uses `.add()` to enqueue and `.remove()` to dequeue.
+- **I/O Optimization (Local Testing):** Integrated `BufferedReader` for efficient input handling, applying the `Throws IOException` concepts learned in Days 16/17.
+
+## 📝 Task
+Determine if a given string is a palindrome.
+1. Take each character in the string, enqueue it in a queue, and push it onto a stack.
+2. Dequeue the first character from the queue and pop the top character from the stack.
+3. Compare the two characters.
+4. Continue until the containers are empty. If all characters match, the word is a palindrome!
+
+## 💡 Example
+
+**Sample Input:**
+```text
+racecar
