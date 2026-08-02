@@ -288,3 +288,48 @@ Determine if a given string is a palindrome.
 **Sample Input:**
 ```text
 racecar
+
+
+DAY -19 
+
+
+Day 19: Interfaces & Polymorphism 🚀
+
+Objective
+
+Today's challenge focuses on understanding Interfaces in Java and how they are used to achieve Polymorphism. We explored how interfaces act as a contract that classes must follow.
+
+Key Learnings
+
+The Concept of Interfaces:
+An interface is essentially a blueprint or a "rulebook" for a class. It defines what a class must do (method declarations) but not how to do it (no method body).
+
+The implements Keyword:
+Unlike inheritance where we use extends to borrow features, we use implements to sign the interface contract. The class is then forced to provide the actual logic for all the abstract methods defined in the interface.
+
+Polymorphism in Action:
+We learned the power of using an Interface as a reference type.
+AdvancedArithmetic calc = new Calculator();
+This makes our code incredibly flexible, allowing the same reference variable to hold different object types at runtime.
+
+The Diamond Problem (Why Interfaces?):
+Java doesn't support multiple inheritance (extending multiple classes) to avoid the "Diamond Problem" (ambiguity). However, a single class can implement multiple interfaces, giving us a clean workaround!
+
+HackerRank Problem: Divisor Sum
+
+Task: Create a Calculator class that implements the AdvancedArithmetic interface and write the logic for the divisorSum(int n) method to return the sum of all divisors of n.
+
+Logic Applied:
+
+Used a for loop from 1 to n.
+
+Used the Modulo Operator (%) to check for remainders (n % i == 0).
+
+Accumulated the sum of all valid divisors.
+
+Tech Stack
+
+Java
+
+Object-Oriented Programming (OOP)
+
