@@ -333,3 +333,56 @@ Java
 
 Object-Oriented Programming (OOP)
 
+
+
+DAY 20
+
+ Objective
+
+Today's challenge focuses on understanding fundamental sorting algorithms. We explored Bubble Sort, learning how it iterates through an array to push (or "bubble") the largest unsorted values to the end of the data structure.
+
+Key Learnings
+
+How Bubble Sort Works:
+It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+
+The Swapping Logic (The "3-Glass" Trick):
+To swap two variables without losing their data, we use a temporary variable:
+
+int temp = a[j];
+a[j] = a[j + 1];
+a[j + 1] = temp;
+
+
+Optimization (Early Exit):
+Bubble Sort can be slow ($O(N^2)$ Time Complexity). However, we can optimize it by tracking if any swaps were made during a pass. If numberOfSwaps == 0 for a full round, it means the array is already sorted, and we can break out of the loop early, saving processing time!
+
+HackerRank Problem: Bubble Sort
+
+Task: Sort an array of size n in ascending order using Bubble Sort. After sorting, print:
+
+The total number of swaps made.
+
+The first element of the sorted array.
+
+The last element of the sorted array.
+
+Logic Applied:
+
+Used nested for loops to iterate through the array.
+
+Compared a[j] and a[j+1] and swapped if the left element was greater.
+
+Maintained a global numSwaps counter.
+
+Printed the required values using a[0] (first) and a[n-1] (last).
+
+Tech Stack
+
+Java
+
+Sorting Algorithms
+
+Array Manipulation
+
+
