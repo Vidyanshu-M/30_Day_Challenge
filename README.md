@@ -96,7 +96,7 @@ Today, we are learning about the algorithmic concept of Radix (Base) and convert
 - **On-the-fly Logic**: Calculating consecutive `1`s dynamically within the `while` loop without needing to store the entire binary string in memory.
 
 
-## Day 11: 2D Arrays (Hourglass Sum) ⏳
+## Day 11: 2D Arrays (Hourglass Sum) 
 
 ###  Objective
 Learned how to navigate and manipulate 2D Arrays (matrices) by solving the "Hourglass Sum" problem on HackerRank.
@@ -111,12 +111,12 @@ Learned how to navigate and manipulate 2D Arrays (matrices) by solving the "Hour
 
 DAY 12 
 
-## Day 12: Inheritance 🧬
+## Day 12: Inheritance 
 
-### 📝 Objective
+###  Objective
 Learned and applied Object-Oriented Programming (OOP) concepts, specifically Inheritance and Constructors, by creating a derived class that inherits from a base class.
 
-### 💡 Key Learnings
+###  Key Learnings
 - **Class Inheritance:** Used the `extends` keyword to create a `Student` class that inherits properties (`firstName`, `lastName`, `idNumber`) from a parent `Person` class.
 - **Constructors & `super()`:** Learned how to initialize a child class object while passing required parameters back up to the parent class's constructor using the `super()` keyword.
 - **Array Processing & Logic:** Implemented a `calculate()` method to iterate through an integer array (`testScores`), compute the average, and return a specific character grade based on conditional logic.
@@ -124,12 +124,12 @@ Learned and applied Object-Oriented Programming (OOP) concepts, specifically Inh
 
 DAY 13 
 
-## Day 13: Abstract Classes 📖
+## Day 13: Abstract Classes 
 
-### 📝 Objective
+###  Objective
 Extended the concept of Inheritance by working with Abstract Classes to understand how to enforce method implementation in child classes.
 
-### 💡 Key Learnings
+###  Key Learnings
 - **Abstract Classes:** Learned that abstract classes act as a blueprint and cannot be instantiated directly (e.g., `new Book()` throws an error). They only exist to be extended.
 - **Abstract Methods:** Understood that an abstract method is a contract. If a parent class has an abstract `display()` method, the child class is strictly forced to implement it, ensuring consistent behavior across all child classes.
 - **Data Encapsulation & `super()`:** Continued practicing passing parameters from the child constructor (`MyBook`) to the parent constructor (`Book`) using the `super()` keyword, keeping the code DRY (Don't Repeat Yourself).
@@ -138,7 +138,7 @@ Extended the concept of Inheritance by working with Abstract Classes to understa
 
 DAY 14 
 
-# Day 14: Scope and Array Optimization 🚀
+# Day 14: Scope and Array Optimization 
 
 ## Objective
 The goal for today was to solve the **Maximum Absolute Difference** problem. The challenge required finding the maximum absolute difference between any two elements in an array of non-negative integers.
@@ -172,7 +172,7 @@ void computeDifference() {
 DAY 15
 
 
-# Day 15: Linked List - Insertion at the Tail 🚂
+# Day 15: Linked List - Insertion at the Tail 
 
 ## Objective
 Today's challenge was to understand the fundamentals of a Singly Linked List and write a function to insert a new Node at the tail (end) of the list.
@@ -240,23 +240,23 @@ Today's challenge is all about understanding **Exception Handling**. The goal is
 
 DAY 18
 
-# Day 17: More Exceptions - Propagating 🛡️
+# Day 17: More Exceptions - Propagating 
 
-## 🎯 Objective
+##  Objective
 Today's challenge dives deeper into Exception Handling. Instead of just catching exceptions thrown by Java's built-in methods, we practice **throwing** our own exceptions and **propagating** them back to the calling method.
 
-## 📝 Task
+##  Task
 Write a `Calculator` class with a single method: `int power(int n, int p)`. 
 - The method takes two integers and returns the result of $n^p$.
 - **Constraint:** If either `n` or `p` is negative, the method must throw an exception with the exact message: `n and p should be non-negative`.
 
-## 🧠 Concepts Covered
+##  Concepts Covered
 - **Exception Propagation:** Passing the responsibility of handling an error to the calling method (the "Boss-Worker" model).
 - **`throws` Keyword:** Used in the method signature to warn that this method might throw an exception.
 - **`throw` Keyword:** Used inside the method to actually create and throw a new Exception object.
 - **Math.pow():** Utilizing Java's built-in Math library and casting the double result back to an integer.
 
-## 💡 Examples
+##  Examples
 
 **Sample Input 1:**
 ```text
@@ -271,19 +271,19 @@ DAY 18
 ##  Objective
 Today's challenge introduces two fundamental Data Structures: Stacks and Queues. We are tasked with building a system that can verify if a given word is a palindrome by leveraging the core principles of both structures simultaneously.
 
-## 🧠 Concepts Covered
+##  Concepts Covered
 - **Stack:** Follows the **LIFO** (Last-In-First-Out) principle. Uses `.push()` to add and `.pop()` to remove.
 - **Queue:** Follows the **FIFO** (First-In-First-Out) principle. Implemented via a `LinkedList`. Uses `.add()` to enqueue and `.remove()` to dequeue.
 - **I/O Optimization (Local Testing):** Integrated `BufferedReader` for efficient input handling, applying the `Throws IOException` concepts learned in Days 16/17.
 
-## 📝 Task
+##  Task
 Determine if a given string is a palindrome.
 1. Take each character in the string, enqueue it in a queue, and push it onto a stack.
 2. Dequeue the first character from the queue and pop the top character from the stack.
 3. Compare the two characters.
 4. Continue until the containers are empty. If all characters match, the word is a palindrome!
 
-## 💡 Example
+##  Example
 
 **Sample Input:**
 ```text
@@ -293,7 +293,7 @@ racecar
 DAY -19 
 
 
-Day 19: Interfaces & Polymorphism 🚀
+Day 19: Interfaces & Polymorphism 
 
 Objective
 
@@ -384,5 +384,60 @@ Java
 Sorting Algorithms
 
 Array Manipulation
+
+
+DAY 21
+
+
+Day 21: Generics 
+
+ Objective
+
+Today's challenge dives into Generics in Java. Generics allow us to write flexible, reusable code by parameterizing data types. Instead of writing separate methods for Integer[], String[], or Double[], we can write a single Generic Method that handles all of them!
+
+ Key Learnings
+
+What are Generics?
+Generics act as a "Sticker" (or placeholder) for data types. We use angle brackets < > (e.g., <T>, <E>) to denote a generic type. It provides Type Safety at compile-time (catching errors early).
+
+Generic Methods:
+We can create a method that adapts to the type of data passed to it.
+Syntax: public static <E> void printArray(E[] array)
+
+The <E> before the return type tells Java that E is a placeholder for a generic type (often stands for 'Element').
+
+The "For-Each" Loop (Enhanced For-Loop):
+A cleaner way to iterate through arrays or collections without worrying about indices or bounds.
+
+for (E element : array) {
+    System.out.println(element);
+}
+
+
+Translation: "For each element of type E inside the array, print it."
+
+ HackerRank Problem: Print Array
+
+Task: Write a single generic function named printArray that takes an array of generic elements as a parameter and prints each element on a new line. Do not use method overloading.
+
+Logic Applied:
+
+Created a class Printer<T>.
+
+Defined a generic method printArray with a type parameter <E>.
+
+Used a for-each loop to traverse through the array and print each item.
+
+The same method flawlessly handles both Integer[] and String[] passed by the hidden main method.
+
+ Tech Stack
+
+Java
+
+Generics <E> / <T>
+
+For-Each Loop
+
+Compile-time Type Safety
 
 
