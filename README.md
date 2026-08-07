@@ -441,3 +441,42 @@ For-Each Loop
 Compile-time Type Safety
 
 
+DAY 22
+
+# Day 22: Binary Search Trees 🚀
+
+## 📝 Objective
+Today's challenge introduced the fundamental concepts of Data Structures: **Trees**, specifically **Binary Search Trees (BST)**. We learned how to traverse a tree and calculate its maximum height using recursion.
+
+## 🧠 Key Learnings
+
+1. **What is a Tree?**
+   Unlike Arrays or Linked Lists, a Tree is a non-linear data structure organized in a hierarchical format.
+   - **Root:** The topmost node.
+   - **Leaf:** A node with no children.
+   - **Edges:** The connecting links between nodes.
+
+2. **Binary Search Tree (BST) Rules:**
+   - Maximum of 2 children per node.
+   - **Left Child:** Must have a value *less than or equal* to its parent.
+   - **Right Child:** Must have a value *greater* than its parent.
+
+3. **Calculating Tree Height:**
+   The height of a BST is the number of edges between the root and the furthest leaf. We can easily calculate this using **Recursion**.
+   - Base Case: If the node is `null`, return `-1` (an empty tree has a height of -1).
+   - Recursive Step: Get the maximum height between the left and right subtrees, and add `1` (for the current node's edge).
+   - Logic: `Math.max(getHeight(root.left), getHeight(root.right)) + 1;`
+
+## 💻 HackerRank Problem: Calculate Height
+**Task:** Given a pointer to the root of a binary search tree, complete the `getHeight` function to return its height.
+
+**Logic Applied:**
+- Used depth-first traversal with recursion.
+- Handled the null base case.
+- Returned the maximum calculated path length.
+
+## 🛠️ Tech Stack
+- Java
+- Data Structures
+- Binary Search Trees (BST)
+- Recursion
