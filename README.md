@@ -443,12 +443,12 @@ Compile-time Type Safety
 
 DAY 22
 
-# Day 22: Binary Search Trees 🚀
+# Day 22: Binary Search Trees 
 
-## 📝 Objective
+##  Objective
 Today's challenge introduced the fundamental concepts of Data Structures: **Trees**, specifically **Binary Search Trees (BST)**. We learned how to traverse a tree and calculate its maximum height using recursion.
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 1. **What is a Tree?**
    Unlike Arrays or Linked Lists, a Tree is a non-linear data structure organized in a hierarchical format.
@@ -467,7 +467,7 @@ Today's challenge introduced the fundamental concepts of Data Structures: **Tree
    - Recursive Step: Get the maximum height between the left and right subtrees, and add `1` (for the current node's edge).
    - Logic: `Math.max(getHeight(root.left), getHeight(root.right)) + 1;`
 
-## 💻 HackerRank Problem: Calculate Height
+##  HackerRank Problem: Calculate Height
 **Task:** Given a pointer to the root of a binary search tree, complete the `getHeight` function to return its height.
 
 **Logic Applied:**
@@ -482,3 +482,26 @@ Today's challenge introduced the fundamental concepts of Data Structures: **Tree
 - Recursion   
 
 
+DAY 23
+
+# Day 23: BST Level-Order Traversal (Breadth-First Search) 
+
+
+The task for today is to traverse a Binary Search Tree (BST) level-by-level, from left to right, and top to bottom. This is a classic implementation of the Breadth-First Search (BFS) algorithm.
+
+
+Unlike Depth-First Search (DFS) where we dive deep into a single branch, BFS explores the tree floor-by-floor. 
+To achieve this, we use a **Queue (FIFO - First-In-First-Out)** data structure:
+1. Enqueue the `root` node.
+2. While the queue is not empty:
+   - Dequeue the node at the front and print its data.
+   - Enqueue the left child (if it exists).
+   - Enqueue the right child (if it exists).
+
+
+To compile and run this code directly in your PC terminal:
+
+```bash
+javac Day23_Local.java
+
+java Day23_Local
