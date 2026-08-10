@@ -527,3 +527,28 @@ java Day24
 
 
 
+DAY 25
+
+
+
+
+# Day 25: Running Time and Complexity 
+
+## Objective
+The goal is to determine if a given number is prime while optimizing the algorithm to handle large inputs without throwing a Time Limit Exceeded (TLE) error.
+
+## Concept & Approach
+* **Time Complexity (Big O):** This metric evaluates how the execution time of an algorithm scales as the input size ($n$) grows.
+* **The Bottleneck:** The basic approach of checking for factors from $2$ to $n-1$ results in a linear time complexity of $O(n)$, which is highly inefficient for large numbers.
+* **Mathematical Optimization:** Divisors always exist in pairs. If a number has a factor, at least one of those factors must be less than or equal to the square root of the number ($\sqrt{n}$).
+* **The $O(\sqrt{n})$ Solution:** By updating the loop condition to `i * i <= n`, we stop checking past the square root. For an input like $10,000$, this reduces the required checks from $10,000$ to just $100$.
+
+## Execution (PC Terminal)
+To compile and execute this code in a standard terminal:
+
+```bash
+# Compile the file
+javac Day25.java
+
+# Run the compiled program
+java Day25
