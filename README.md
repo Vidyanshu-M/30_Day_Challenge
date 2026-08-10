@@ -467,7 +467,6 @@ Today's challenge introduced the fundamental concepts of Data Structures: **Tree
    - Recursive Step: Get the maximum height between the left and right subtrees, and add `1` (for the current node's edge).
    - Logic: `Math.max(getHeight(root.left), getHeight(root.right)) + 1;`
 
-##  HackerRank Problem: Calculate Height
 **Task:** Given a pointer to the root of a binary search tree, complete the `getHeight` function to return its height.
 
 **Logic Applied:**
@@ -475,7 +474,7 @@ Today's challenge introduced the fundamental concepts of Data Structures: **Tree
 - Handled the null base case.
 - Returned the maximum calculated path length.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - Java
 - Data Structures
 - Binary Search Trees (BST)
@@ -505,3 +504,26 @@ To compile and run this code directly in your PC terminal:
 javac Day23_Local.java
 
 java Day23_Local
+
+
+DAY 24
+
+# Day 24: More Linked Lists (Removing Duplicates) 
+
+## Objective
+The task is to remove duplicate nodes from a sorted Linked List, returning the head of the newly updated, unique list.
+
+## Concept & Approach
+In Java, we don't have to manually delete nodes and free up memory. Thanks to the **Garbage Collector**, we only need to break the connection to the duplicate node.
+1. We iterate through the list using a `current` pointer.
+2. Because the list is sorted, duplicates will always be adjacent.
+3. If `current.data == current.next.data`, we bypass the next node by setting `current.next = current.next.next`. (We stay on the current node to check for further duplicates).
+4. If they are different, we simply move forward `current = current.next`.
+
+## Execution (Terminal)
+```bash
+javac Day24.java
+java Day24
+
+
+
