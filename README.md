@@ -552,3 +552,29 @@ javac Day25.java
 
 # Run the compiled program
 java Day25
+
+
+DAY 26
+
+# Day 26: Nested Logic 
+
+## Objective
+The objective of today's challenge was to calculate a library fine based on expected and actual return dates using nested conditional statements.
+
+## Concept & Approach
+The primary concept I learned is how to structure logic hierarchically, acting like security gates where the largest condition must be evaluated first:
+* **The Year Barrier:** If a book is returned in a later calendar year, a fixed fine of `10000` is applied immediately, and the logic stops.
+* **The Month Barrier:** If the year is the same, the logic steps inside to check the months. If the month is late, the fine is calculated strictly based on the difference in months, completely ignoring the days.
+* **The Day Barrier:** Finally, if both the year and month are identical, the logic checks the days to apply a daily fine. 
+
+This top-down approach ensures that larger timeframe penalties take absolute precedence over smaller ones without any overlapping errors.
+
+## Execution (PC Terminal)
+To compile and execute this code in a standard terminal:
+
+```bash
+# Compile the file
+javac Day26.java
+
+# Run the compiled program
+java Day26
