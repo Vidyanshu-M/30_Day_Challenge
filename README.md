@@ -578,3 +578,27 @@ javac Day26.java
 
 # Run the compiled program
 java Day26
+
+
+DAY 27
+
+# Day 27: Testing
+
+## Objective
+The objective of today's challenge was to step into the shoes of a Quality Assurance (QA) engineer and write test data to validate a given algorithm.
+
+## Concept & Approach
+Instead of writing the algorithm to find the minimum index in an array, I had to create unit tests covering different execution patterns. Good unit tests evaluate the algorithm across various scenarios:
+* **Empty Sequence (Edge Case):** Passing an empty array `[]` to ensure the system correctly raises an exception instead of crashing.
+* **Unique Values (Normal Case):** Providing a standard array where every element is different, along with the expected index of the minimum value.
+* **Duplicate Minimums (Tricky Case):** Passing an array where the lowest value appears at multiple indices to ensure the algorithm returns the first occurrence (smallest index).
+
+## Execution (PC Terminal)
+To compile and execute this test suite in a standard terminal:
+
+```bash
+# Compile the file
+javac Day27.java
+
+# Run the compiled program
+java Day27
