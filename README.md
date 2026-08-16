@@ -602,3 +602,30 @@ javac Day27.java
 
 # Run the compiled program
 java Day27
+
+
+
+DAY 28
+
+
+# Day 28: RegEx, Patterns, and Intro to Databases 
+
+## Objective
+The goal of today's challenge is to work with Regular Expressions (RegEx) to filter data from a simulated database table and then sort the extracted data alphabetically.
+
+## Concept & Approach
+Instead of basic string manipulation, this problem requires structural pattern matching to validate user emails. 
+* **RegEx Rule (`.+@gmail\.com$`):** The pattern ensures that the email contains at least one character before the `@` symbol, strictly matches the `gmail` domain, and ends precisely with `.com` using the `$` anchor.
+* **Pattern & Matcher:** I utilized Java's `Pattern` class to compile the regex rule and the `Matcher` class to evaluate each email ID against it.
+* **Data Organization:** Valid first names were extracted and stored in an `ArrayList`.
+* **Alphabetical Sorting:** I applied `Collections.sort()` to automatically organize the array list alphabetically before printing the final output. 
+
+## Execution (PC Terminal)
+To compile and execute this code locally in a standard terminal environment:
+
+```bash
+# Compile the file
+javac Day28.java
+
+# Run the compiled program
+java Day28
