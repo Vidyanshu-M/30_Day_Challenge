@@ -42,7 +42,7 @@ public class Day_27_Solution1 {
             minimum_index(seq);
             throw new AssertionError("Exception wasn't thrown as expected");
         } catch (IllegalArgumentException e) {
-            // Test Pass!
+
         }
         
         int[] seq2 = TestDataUniqueValues.get_array();
